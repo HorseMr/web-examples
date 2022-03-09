@@ -7,8 +7,8 @@ const CustomRunComponent = (props) => {
   const { defaultVolume, defaultBright } = props;
   
   return (
-    <>
-      <section style={{padding:"0.26rem"}}>
+    <div>
+      <section>
         音量：<Slider
           min={0}
           max={100}
@@ -22,7 +22,7 @@ const CustomRunComponent = (props) => {
           disabled={true}
         />
       </section>
-    </>
+    </div>
 
 
   );

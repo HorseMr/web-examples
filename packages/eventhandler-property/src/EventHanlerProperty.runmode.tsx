@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import { SDK } from "@qcloud-apaas/web-sdk";
-import { Switch, Form } from "antd";
+import { Switch, Form } from "tea-component";
 import properties from "./properties";
 
 const CustomDesignComponent = (props) => {
@@ -23,7 +23,7 @@ const CustomDesignComponent = (props) => {
     <Form>
       <Form.Item label="选择器">
         <Switch
-          checked={value}
+          value={value}
           onChange={handleChange}
           onClick={onMyEventTrigger}
           style={{ maxWidth: "300px" }}

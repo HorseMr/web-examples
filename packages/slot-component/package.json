@@ -34,7 +34,6 @@
   "dependencies": {
     "@qcloud-apaas/mobile-ui": "^0.1.43",
     "@qcloud-apaas/web-sdk": "^0.1.18",
-    "antd": "^3",
     "react": "^16.8.1",
     "react-css-modules": "^4.7.11"
   }

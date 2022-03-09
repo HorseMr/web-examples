@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Form } from "antd";
+import { Switch, Form } from "tea-component";
 import { SDK } from "@qcloud-apaas/web-sdk";
 import properties from "./properties";
 

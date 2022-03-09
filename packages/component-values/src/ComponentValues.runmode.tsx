@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { SDK } from "@qcloud-apaas/web-sdk";
-import { Form } from "antd";
+import { Form } from "tea-component";
 
 // SDK.useModel
 // 传入当前组件的标识，可以获得一个成对的value 和 onChange
@@ -32,7 +32,9 @@ const CustomRunComponent = (props) => {
     const totalPriceNum = Number.isNaN(totalPrice) ? 0 : totalPrice;
     onChange(totalPriceNum);
   }, [price, count, onChange]);
-  return <Form.Item label="总金额">{visible ? value : "***"}</Form.Item>;
+  return <Form>
+    <Form.Item label="总金额：">{visible ? value : "***"}</Form.Item>
+  </Form>;
 };
 
 export default CustomRunComponent;

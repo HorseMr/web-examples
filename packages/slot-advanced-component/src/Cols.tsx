@@ -1,5 +1,7 @@
 import React, { useCallback } from "react";
-import { Row, Col, Button, Input } from "antd";
+// import { Row, Col, Button, Input } from "antd";
+
+import { Row, Col, Button, Input } from "tea-component";
 
 const genId = () => Date.now().toString(16);
 
@@ -32,7 +34,7 @@ export default (props) => {
         <Row key={col.id}>
           <Col span={18}>
             <Input
-              size="small"
+              size="s"
               value={col.label}
               onChange={(e) => setColLabel(index, e)}
             ></Input>

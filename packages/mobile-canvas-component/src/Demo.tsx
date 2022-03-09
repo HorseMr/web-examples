@@ -1,7 +1,7 @@
 import React from "react";
 import { SDK } from "@qcloud-apaas/web-sdk";
 import { MuiField } from "@qcloud-apaas/mobile-ui/es/field";
-import { Form, Input } from "antd";
+import { Form, Input } from "tea-component";
 
 const MobileDemo = () => {
   return <MuiField title="字段展示" name="label" placeholder="请输入" />;
@@ -9,9 +9,11 @@ const MobileDemo = () => {
 
 const PCDemo = () => {
   return (
-    <Form.Item label="字段展示">
-      <Input />
-    </Form.Item>
+    <Form>
+      <Form.Item label="字段展示:">
+        <Input />
+      </Form.Item>
+    </Form>
   );
 };
 

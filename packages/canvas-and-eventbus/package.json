@@ -33,7 +33,6 @@
   },
   "dependencies": {
     "@qcloud-apaas/web-sdk": "^0.1.18",
-    "antd": "^3",
     "echarts": "^5.1.2",
     "react": "^16.8.1",
     "react-css-modules": "^4.7.11"
